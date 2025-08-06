@@ -87,7 +87,7 @@ main {
 }
 
 /* Cards */
-.team-card, .advisor-card, .product-card {
+.team-card, .advisor-card, .product-card, .mission-card {
   background: white;
   border-radius: 16px;
   transition: 0.3s ease;
@@ -95,7 +95,7 @@ main {
   transform: translateY(40px);
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
-.team-card:hover, .advisor-card:hover, .product-card:hover {
+.team-card:hover, .advisor-card:hover, .product-card:hover, .mission-card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
@@ -112,6 +112,37 @@ main {
   height: 180px;
   width: 100%;
   object-fit: cover;
+}
+
+/* Mission Section */
+.mission-section {
+  background: #ffffff;
+  padding: 60px 0;
+}
+.mission-card {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.mission-card:hover {
+  background-color: #f7fcfa;
+  transform: translateY(-8px) scale(1.03);
+}
+.mission-card i {
+  font-size: 32px;
+  color: #1cc88a;
+  margin-bottom: 16px;
+}
+.mission-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.mission-card p {
+  font-size: 0.95rem;
+  color: #666;
 }
 
 /* Contact Page */
@@ -161,4 +192,11 @@ footer {
 @keyframes fadeInDown {
   from {opacity:0; transform: translateY(-30px);}
   to {opacity:1; transform: translateY(0);}
+}
+
+/* Responsive Spacing */
+@media (max-width: 767px) {
+  .mission-card {
+    margin-bottom: 20px;
+  }
 }
