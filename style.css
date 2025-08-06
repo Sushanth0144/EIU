@@ -61,13 +61,19 @@ main {
 /* About Section */
 .about-section {
   background: #f0f4f8;
-  padding: 60px 0;
+  padding: 80px 20px;
+  text-align: center;
 }
-.about-section p.lead {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
+.about-section p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333;
+  max-width: 900px;
+  margin: 20px auto;
+}
+.about-section em {
+  color: #444;
+  font-style: italic;
 }
 
 /* Section Title */
@@ -75,6 +81,7 @@ main {
   font-weight: 700;
   position: relative;
   margin-bottom: 40px;
+  font-size: 2rem;
 }
 .section-title::after {
   content: '';
@@ -117,7 +124,7 @@ main {
 /* Mission Section */
 .mission-section {
   background: #ffffff;
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 .mission-card {
   padding: 30px 20px;
@@ -143,10 +150,11 @@ main {
 .mission-card p {
   font-size: 0.95rem;
   color: #666;
+  min-height: 60px;
 }
 
 .icon i {
-  color: #1cc88a; /* stronger green if you want */
+  color: #1cc88a;
   transition: transform 0.3s ease;
 }
 .mission-card:hover .icon i {
@@ -206,5 +214,10 @@ footer {
 @media (max-width: 767px) {
   .mission-card {
     margin-bottom: 20px;
+  }
+
+  .about-section p {
+    text-align: left;
+    padding: 0 15px;
   }
 }
