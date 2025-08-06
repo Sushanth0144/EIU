@@ -145,6 +145,14 @@ main {
   color: #666;
 }
 
+.icon i {
+  color: #1cc88a; /* stronger green if you want */
+  transition: transform 0.3s ease;
+}
+.mission-card:hover .icon i {
+  transform: scale(1.1);
+}
+
 /* Contact Page */
 .contact-section {
   padding: 60px 0;
