@@ -161,6 +161,24 @@ main {
   transform: scale(1.1);
 }
 
+/* Invest Button */
+.btn-invest {
+  background: linear-gradient(120deg, #4e73df, #1cc88a);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-invest:hover {
+  background: linear-gradient(120deg, #1cc88a, #4e73df);
+  transform: translateY(-2px);
+}
+
+
+
 /* Contact Page */
 .contact-section {
   padding: 60px 0;
