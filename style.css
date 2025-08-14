@@ -9,9 +9,7 @@ html, body {
   background-color: #f9f9f9;
 }
 
-main {
-  flex: 1;
-}
+main { flex: 1; }
 
 /* Navbar */
 .navbar {
@@ -23,14 +21,23 @@ main {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 .navbar-brand {
+  color: #009933 !important; /* pitch green to match logo */
   font-weight: 700;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+  margin-right: 8px;
 }
 
 /* Hero Section */
 .hero {
   min-height: 60vh;
-  background: linear-gradient(to right, #4e73df, #1cc88a);
+  /* Bold, evident gradient */
+  background: linear-gradient(135deg, #0f2c64, #1e3c72, #2a5298, #009688);
   color: white;
   text-align: center;
   display: flex;
@@ -38,9 +45,7 @@ main {
   justify-content: center;
   padding: 60px 20px;
 }
-.hero-content {
-  animation: fadeInDown 1s ease;
-}
+.hero-content { animation: fadeInDown 1s ease; }
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -71,10 +76,7 @@ main {
   max-width: 900px;
   margin: 20px auto;
 }
-.about-section em {
-  color: #444;
-  font-style: italic;
-}
+.about-section em { color: #444; font-style: italic; }
 
 /* Section Title */
 .section-title {
@@ -122,10 +124,7 @@ main {
 }
 
 /* Mission Section */
-.mission-section {
-  background: #ffffff;
-  padding: 60px 20px;
-}
+.mission-section { background: #ffffff; padding: 60px 20px; }
 .mission-card {
   padding: 30px 20px;
   text-align: center;
@@ -138,52 +137,30 @@ main {
   background-color: #f7fcfa;
   transform: translateY(-8px) scale(1.03);
 }
-.mission-card i {
-  font-size: 32px;
-  color: #1cc88a;
-  margin-bottom: 16px;
-}
-.mission-card h5 {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.mission-card p {
-  font-size: 0.95rem;
-  color: #666;
-  min-height: 60px;
-}
+.mission-card i { font-size: 32px; color: #1cc88a; margin-bottom: 16px; }
+.mission-card h5 { font-weight: 600; margin-bottom: 10px; }
+.mission-card p { font-size: 0.95rem; color: #666; min-height: 60px; }
 
-.icon i {
-  color: #1cc88a;
-  transition: transform 0.3s ease;
-}
-.mission-card:hover .icon i {
-  transform: scale(1.1);
-}
+.icon i { color: #1cc88a; transition: transform 0.3s ease; }
+.mission-card:hover .icon i { transform: scale(1.1); }
 
-/* Invest Button */
+/* Invest Button — match the hero gradient */
 .btn-invest {
-  background: linear-gradient(120deg, #4e73df, #1cc88a);
-  color: white;
+  background: linear-gradient(135deg, #0f2c64, #1e3c72, #2a5298, #009688);
+  color: #fff;
   font-weight: 600;
   border: none;
   padding: 8px 16px;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
-
 .btn-invest:hover {
-  background: linear-gradient(120deg, #1cc88a, #4e73df);
+  filter: brightness(1.05);
   transform: translateY(-2px);
 }
 
-
-
 /* Contact Page */
-.contact-section {
-  padding: 60px 0;
-  background: #f0f4f8;
-}
+.contact-section { padding: 60px 0; background: #f0f4f8; }
 .contact-card {
   background: white;
   border-radius: 16px;
@@ -206,7 +183,7 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: linear-gradient(120deg, #4e73df, #1cc88a);
+  background: linear-gradient(135deg, #0f2c64, #1e3c72, #2a5298, #009688);
   color: white;
   border: none;
   border-radius: 50%;
@@ -218,9 +195,7 @@ footer {
   transition: transform 0.3s ease;
   z-index: 999;
 }
-#backToTop:hover {
-  transform: translateY(-4px) scale(1.05);
-}
+#backToTop:hover { transform: translateY(-4px) scale(1.05); }
 
 /* Animations */
 @keyframes fadeInDown {
@@ -230,12 +205,6 @@ footer {
 
 /* Responsive Spacing */
 @media (max-width: 767px) {
-  .mission-card {
-    margin-bottom: 20px;
-  }
-
-  .about-section p {
-    text-align: left;
-    padding: 0 15px;
-  }
+  .mission-card { margin-bottom: 20px; }
+  .about-section p { text-align: left; padding: 0 15px; }
 }
