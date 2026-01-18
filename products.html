@@ -10,21 +10,42 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <!-- Theme CSS -->
     <link rel="stylesheet" href="style.css" />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Only to make SVG icons behave like the previous <img> (size + spacing). No color/background changes. -->
+    <style>
+      .card-icon {
+        width: 100%;
+        height: 180px; /* same visual space as your placeholder image */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem; /* same as mb-3 */
+      }
+      .card-icon svg {
+        width: 90px;
+        height: 90px;
+        display: block;
+      }
+    </style>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html"
-          >Ecowize Innovations Unlimited</a
-        >
+        <a class="navbar-brand fw-bold" href="index.html">
+          <img src="logo.png" alt="Logo" height="40" class="me-2" />
+          Ecowize Innovations Unlimited
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -67,202 +88,204 @@
         <div class="container">
           <div class="row g-4 text-center">
             <!-- Product 1 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=EcoSmart+Water+Filter"
-                  alt="EcoSmart Water Filter"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>EcoSmart Water Filter</h5>
+                <!-- Icon (Windmill) in image place -->
+                <div class="card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-label="Windmill"
+                  >
+                    <line x1="12" y1="2" x2="12" y2="11" />
+                    <line x1="12" y1="11" x2="6" y2="6" />
+                    <line x1="12" y1="11" x2="18" y2="6" />
+                    <line x1="12" y1="11" x2="12" y2="22" />
+                    <circle cx="12" cy="11" r="1.2" />
+                  </svg>
+                </div>
+
+                <h5>Renewable Energy Systems</h5>
                 <p class="text-muted small flex-grow-1">
-                  A sustainable water filtration system for home and office.
+                  Wind-based and hybrid clean energy solutions.
                 </p>
                 <a
                   class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=EcoSmart%20Water%20Filter"
-                  >Invest</a
+                  href="contact.html?type=invest&product=Renewable%20Energy%20Systems"
                 >
+                  Invest
+                </a>
               </div>
             </div>
 
             <!-- Product 2 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Solar+Roof+Tiles"
-                  alt="Solar Roof Tiles"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Solar Roof Tiles</h5>
+                <!-- Icon (Nutraceuticals / Plant) -->
+                <div class="card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-label="Plant"
+                  >
+                    <path d="M12 21V12" />
+                    <path d="M12 12c-4 0-6-3-6-7 4 0 6 3 6 7z" />
+                    <path d="M12 12c4 0 6-3 6-7-4 0-6 3-6 7z" />
+                  </svg>
+                </div>
+
+                <h5>Nutraceuticals</h5>
                 <p class="text-muted small flex-grow-1">
-                  Generate clean energy with stylish and durable solar tiles.
+                  High-potency foods and nutritional aids.
                 </p>
                 <a
                   class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Solar%20Roof%20Tiles"
-                  >Invest</a
+                  href="contact.html?type=invest&product=Nutraceuticals"
                 >
+                  Invest
+                </a>
               </div>
             </div>
 
             <!-- Product 3 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Eco+LED+Bulb"
-                  alt="Eco LED Bulb"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Eco LED Bulb</h5>
+                <!-- Icon (Tractor) -->
+                <div class="card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-label="Tractor"
+                  >
+                    <circle cx="7" cy="17" r="3" />
+                    <circle cx="17" cy="17" r="2" />
+                    <path d="M4 14h10v-4H9V7H7v3H4z" />
+                    <path d="M14 14h3l3 3v1h-3" />
+                  </svg>
+                </div>
+
+                <h5>Innovative Farm, Garden & Construction Tools</h5>
                 <p class="text-muted small flex-grow-1">
-                  Energy‑efficient lighting solution with long lifespan.
+                  Smart tools designed for efficiency and sustainability.
                 </p>
                 <a
                   class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Eco%20LED%20Bulb"
-                  >Invest</a
+                  href="contact.html?type=invest&product=Innovative%20Farm%20Garden%20Construction%20Tools"
                 >
+                  Invest
+                </a>
               </div>
             </div>
 
-            <!-- Product 4 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <!-- Product 4 (centered on large screens) -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Biodegradable+Packaging"
-                  alt="Biodegradable Packaging"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Biodegradable Packaging</h5>
+                <!-- Icon (Ship/Sail) -->
+                <div class="card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-label="Ship"
+                  >
+                    <path d="M3 17h18" />
+                    <path d="M6 17l2-6h8l2 6" />
+                    <path d="M12 4v7" />
+                    <path d="M12 4l5 3" />
+                  </svg>
+                </div>
+
+                <h5>Long-Range Vehicles, Ships & Aircraft</h5>
                 <p class="text-muted small flex-grow-1">
-                  Reduce plastic waste with our compostable packaging.
+                  Advanced transportation systems for extended range.
                 </p>
                 <a
                   class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Biodegradable%20Packaging"
-                  >Invest</a
+                  href="contact.html?type=invest&product=Long-Range%20Transportation"
                 >
+                  Invest
+                </a>
               </div>
             </div>
 
             <!-- Product 5 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Smart+Irrigation+System"
-                  alt="Smart Irrigation System"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Smart Irrigation System</h5>
+                <!-- Icon (House/Materials) -->
+                <div class="card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-label="House"
+                  >
+                    <path d="M3 11l9-7 9 7" />
+                    <path d="M5 10v10h14V10" />
+                  </svg>
+                </div>
+
+                <h5>Innovative Construction Materials</h5>
                 <p class="text-muted small flex-grow-1">
-                  Automated irrigation for water conservation and efficiency.
+                  Eco-friendly, durable building solutions.
                 </p>
                 <a
                   class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Smart%20Irrigation%20System"
-                  >Invest</a
+                  href="contact.html?type=invest&product=Innovative%20Construction%20Materials"
                 >
+                  Invest
+                </a>
               </div>
             </div>
 
             <!-- Product 6 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-4">
               <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Air+Quality+Monitor"
-                  alt="Air Quality Monitor"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Air Quality Monitor</h5>
-                <p class="text-muted small flex-grow-1">
-                  Track and improve indoor air quality in real time.
-                </p>
-                <a
-                  class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Air%20Quality%20Monitor"
-                  >Invest</a
-                >
-              </div>
-            </div>
+                <!-- Icon (Other Categories - grid) -->
+                <div class="card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-label="Other Categories"
+                  >
+                    <rect x="4" y="4" width="6" height="6" rx="1" />
+                    <rect x="14" y="4" width="6" height="6" rx="1" />
+                    <rect x="4" y="14" width="6" height="6" rx="1" />
+                    <rect x="14" y="14" width="6" height="6" rx="1" />
+                  </svg>
+                </div>
 
-            <!-- Product 7 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Eco-Friendly+Paint"
-                  alt="Eco-Friendly Paint"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Eco‑Friendly Paint</h5>
+                <h5>Other Categories</h5>
                 <p class="text-muted small flex-grow-1">
-                  Low‑VOC paint for safe, sustainable, and stylish interiors.
+                  Medical, Kids & Toys, Pets, Games & Novelties and more.
                 </p>
                 <a
                   class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Eco-Friendly%20Paint"
-                  >Invest</a
+                  href="contact.html?type=invest&product=Other%20Categories"
                 >
-              </div>
-            </div>
-
-            <!-- Product 8 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Recyclable+Batteries"
-                  alt="Recyclable Batteries"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Recyclable Batteries</h5>
-                <p class="text-muted small flex-grow-1">
-                  Sustainable power storage designed for easy recycling.
-                </p>
-                <a
-                  class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Recyclable%20Batteries"
-                  >Invest</a
-                >
-              </div>
-            </div>
-
-            <!-- Product 9 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Compost+Bin"
-                  alt="Compost Bin"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Compost Bin</h5>
-                <p class="text-muted small flex-grow-1">
-                  Turn kitchen waste into compost for a greener lifestyle.
-                </p>
-                <a
-                  class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Compost%20Bin"
-                  >Invest</a
-                >
-              </div>
-            </div>
-
-            <!-- Product 10 -->
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="product-card p-3 h-100 d-flex flex-column">
-                <img
-                  src="https://via.placeholder.com/300x180?text=Smart+Energy+Meter"
-                  alt="Smart Energy Meter"
-                  class="img-fluid rounded mb-3"
-                />
-                <h5>Smart Energy Meter</h5>
-                <p class="text-muted small flex-grow-1">
-                  Monitor and optimize home energy consumption efficiently.
-                </p>
-                <a
-                  class="btn btn-success btn-invest w-100"
-                  href="contact.html?type=invest&product=Smart%20Energy%20Meter"
-                  >Invest</a
-                >
+                  Invest
+                </a>
               </div>
             </div>
           </div>
@@ -275,6 +298,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
       // Navbar scroll effect
       window.addEventListener("scroll", () => {
